@@ -36,6 +36,16 @@ class ViewController: UIViewController {
         
         firstDicelmageView.image = UIImage(named: sourceDice[_indexDice1])
         
+        //forDice2
+        let indexDice2 : Int = Int.random(in: 0...5)
+        secondDiceimageView.image = UIImage(named: sourceDice[indexDice2])
+        
+        //forDice3
+        let indexDice3 : Int = Int.random(in: 0...5)
+        thirdDiceimageView.image = UIImage(named: sourceDice[indexDice3])
+        
+        
+        
         
         
     }//remdomDice
