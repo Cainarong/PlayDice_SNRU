@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //Expilcit
+    var sourceDice = ["Dice1","Dice2","Dice3","Dice4","Dice5","Dice6"]
+    
     
     @IBOutlet weak var firstDicelmageView: UIImageView!
     
@@ -27,6 +30,11 @@ class ViewController: UIViewController {
     @IBAction func redomDiceButtom(_ sender: UIButton) {
         
         print("You Click Remdom")
+        
+        //forDice1
+        let _indexDice1: Int = Int.random(in: 0...5)
+        
+        firstDicelmageView.image = UIImage(named: sourceDice[_indexDice1])
         
         
         
